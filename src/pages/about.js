@@ -1,14 +1,12 @@
 import React from "react"
-import { Link } from "gatsby"
-
 import Layout from "../components/layout"
-import Header from "../components/header"
+import Title from "../components/title"
 import SEO from "../components/seo"
 
 const AboutPage = () => (
   <Layout>
     <SEO title="About Us" />
-    <p>Welcome to About Us</p>
+    {/* <Title wight="1">Welcome to About Us</Title> */}
     <img src="https://source.unsplash.com/random/400x200" alt="" />
   </Layout>
 )

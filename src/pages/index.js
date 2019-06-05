@@ -4,7 +4,6 @@ import Layout from "../components/layout"
 import Image from "../components/image"
 import SEO from "../components/seo"
 import Contact from "../components/contact"
-import Gallery from "../components/gallery"
 
 const IndexPage = props => (
   <Layout>
@@ -45,7 +44,7 @@ const IndexPage = props => (
             Lorem Ipsum is simply dummy text of the printing and typesetting
             industry. Lorem Ipsum has been the industry's standard dummy tex
           </p>
-          <Link className="button-link" to="/about">
+          <Link className="button-link" to="/services">
             Read More
           </Link>
         </aside>
@@ -56,25 +55,25 @@ const IndexPage = props => (
             Lorem Ipsum is simply dummy text of the printing and typesetting
             industry. Lorem Ipsum has been the industry's standard dummy tex
           </p>
-          <Link className="button-link" to="/about">
+          <Link className="button-link" to="/services">
             Read More
           </Link>
         </aside>
         <aside className="service-box">
-          <Image filename="say-hello.jpg" alt="some image" />
+          <Image filename="modern-splits-look.jpg" alt="some image" />
           <h3 className="main-title">Third Service</h3>
           <p>
             Lorem Ipsum is simply dummy text of the printing and typesetting
             industry. Lorem Ipsum has been the industry's standard dummy tex
           </p>
-          <Link className="button-link" to="/about">
+          <Link className="button-link" to="/services">
             Read More
           </Link>
         </aside>
       </div>
     </section>
     <section className="row-wrapper gallery-section">
-      {/* <div className="inner-wrapper">
+      <div className="inner-wrapper">
         <h2 className="gallery-header">Our Gallery</h2>
         <div className="gallery-wrapper">
           <Image filename="comfy-cool-area-with-split.jpg" alt="some image" />
@@ -92,8 +91,10 @@ const IndexPage = props => (
             alt="some image"
           />
         </div>
-      </div> */}
-      <Gallery />
+        <Link className="button-link btn" to="#">
+          Go to gallery
+        </Link>
+      </div>
     </section>
     <section className="row-wrapper two-column contact-section">
       <h2 className="main-title">Contact Us</h2>

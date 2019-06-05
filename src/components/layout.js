@@ -27,16 +27,9 @@ const Layout = ({ children }) => (
     `}
     render={data => (
       <>
-        <div
-          style={{
-            margin: `0 auto`,
-            maxWidth: 2000,
-            padding: `0px 0 1.45rem`,
-            paddingTop: 0,
-          }}
-        >
+        <div className="page-wrapper">
           <Header />
-          <main>{children}</main>
+          <main className="main-content">{children}</main>
           <footer className="main-footer">
             © {new Date().getFullYear()}, Designed by
             {` `}
