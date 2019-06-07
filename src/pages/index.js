@@ -4,27 +4,31 @@ import Layout from "../components/layout"
 import Image from "../components/image"
 import SEO from "../components/seo"
 import Contact from "../components/contact"
+import Paragraph from "../components/paragraph"
+import Heading1 from "../components/headings/heading1"
+import Heading2 from "../components/headings/heading2"
+import Heading3 from "../components/headings/heading3"
 
 const IndexPage = props => (
   <Layout>
     <SEO title="Home" keywords={[`business`, `web site`, `services`]} />
     <section className="top-banner">
       <Image filename="house-with-air-con.png" alt="some image" />
-      <p className="banner-caption">
+      <Paragraph className="banner-caption">
         Installation, Maintenance and Customer Support is What We Offer
-      </p>
+      </Paragraph>
     </section>
     <article className="row-wrapper two-column about-section">
       <div className="inner-wrapper">
         <section>
-          <h1>Website about section</h1>
-          <p>
+          <Heading1>Website about section</Heading1>
+          <Paragraph>
             Lorem Ipsum is simply dummy text of the printing and typesetting
             industry. Lorem Ipsum has been the industry's standard dummy text
             ever since the 1500s, when an unknown printer took a galley of type
             and scrambled it to make a type PageMaker including versions of
             Lorem Ipsum.
-          </p>
+          </Paragraph>
         </section>
         <section>
           <Image
@@ -35,37 +39,37 @@ const IndexPage = props => (
       </div>
     </article>
     <section className="row-wrapper services-section">
-      <h2 className="services-header">Our Services section</h2>
+      <Heading2 class="services-header">Our Services section</Heading2>
       <div className="inner-wrapper">
         <aside className="service-box">
           <Image filename="different-solit-types.jpg" alt="some image" />
-          <h3 className="main-title">First Service</h3>
-          <p>
+          <Heading3 class="main-title">First Service</Heading3>
+          <Paragraph>
             Lorem Ipsum is simply dummy text of the printing and typesetting
             industry. Lorem Ipsum has been the industry's standard dummy tex
-          </p>
+          </Paragraph>
           <Link className="button-link" to="/services">
             Read More
           </Link>
         </aside>
         <aside className="service-box">
           <Image filename="old-conditioning-systems.jpg" alt="some image" />
-          <h3 className="main-title">Second Service</h3>
-          <p>
+          <Heading3 class="main-title">Second Service</Heading3>
+          <Paragraph>
             Lorem Ipsum is simply dummy text of the printing and typesetting
             industry. Lorem Ipsum has been the industry's standard dummy tex
-          </p>
+          </Paragraph>
           <Link className="button-link" to="/services">
             Read More
           </Link>
         </aside>
         <aside className="service-box">
           <Image filename="modern-splits-look.jpg" alt="some image" />
-          <h3 className="main-title">Third Service</h3>
-          <p>
+          <Heading3 class="main-title">Third Service</Heading3>
+          <Paragraph>
             Lorem Ipsum is simply dummy text of the printing and typesetting
             industry. Lorem Ipsum has been the industry's standard dummy tex
-          </p>
+          </Paragraph>
           <Link className="button-link" to="/services">
             Read More
           </Link>
@@ -74,7 +78,7 @@ const IndexPage = props => (
     </section>
     <section className="row-wrapper gallery-section">
       <div className="inner-wrapper">
-        <h2 className="gallery-header">Our Gallery</h2>
+        <Heading2 class="gallery-header">Our Gallery</Heading2>
         <div className="gallery-wrapper">
           <Image filename="comfy-cool-area-with-split.jpg" alt="some image" />
           <Image
@@ -97,16 +101,16 @@ const IndexPage = props => (
       </div>
     </section>
     <section className="row-wrapper two-column contact-section">
-      <h2 className="main-title">Contact Us</h2>
+      <Heading2 class="main-title">Contact Us</Heading2>
       <div className="inner-wrapper">
         <aside className="form-section">
-          <h3>Send Us a Message</h3>
+          <Heading3>Send Us a Message</Heading3>
           <Contact />
         </aside>
         <aside className="contact-info-section">
-          <h3>Contact Details</h3>
+          <Heading3>Contact Details</Heading3>
           <hr />
-          <p>
+          <Paragraph>
             Phone:&nbsp;&nbsp;
             <Link
               to="tel:1300 123 456"
@@ -115,8 +119,8 @@ const IndexPage = props => (
             >
               1300 123 456
             </Link>
-          </p>
-          <p>
+          </Paragraph>
+          <Paragraph>
             Email:&nbsp;&nbsp;
             <Link
               to="mailto:info@site.com"
@@ -125,7 +129,7 @@ const IndexPage = props => (
             >
               info@site.com
             </Link>
-          </p>
+          </Paragraph>
           <Image filename="say-hello.jpg" alt="some image" />
         </aside>
       </div>
