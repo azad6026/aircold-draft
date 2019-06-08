@@ -43,7 +43,7 @@ a {
   transition: all 0.35s ease-in-out;
 }
 a:hover {
-  color: tomato;
+  color: 8e1803;
   font-weight: bold;
 }
 hr {
@@ -90,6 +90,22 @@ hr {
   padding: 0 0.3rem 0 0;
 }
 /* menu styles */
+.toggle-button {
+  cursor: pointer;
+  display: none;
+  outline: none;
+  position: absolute;
+  right: 1rem;
+  top: 3rem;
+  z-index: 999;
+  width: 4rem;
+  height: 3.4rem;
+  cursor: pointer;
+  -webkit-transition: all 0.3s ease-out;
+  transition: all 0.3s ease-out;
+  background: #a98343;
+  border: 0;
+}
 .main-menu {
   padding: 1rem;
 }
@@ -109,8 +125,8 @@ hr {
   text-transform: uppercase;
 }
 .menu-link:hover {
-  text-shadow: 2px 4px 3px #3c111c;
-  color: #3c0816;
+  text-shadow: 1px 1px 1px #eadc8d;
+  color: #8e1803;
 }
 /* top banner section */
 .services-header,
@@ -439,14 +455,61 @@ hr {
 }
 /*  */
 @media screen and (max-width: 768px) {
+  .menu-list-item {
+    padding: 1rem;
+  }
+  .banner-caption {
+    font-size: 2rem;
+    left: 0;
+    right: 0;
+    line-height: 3rem;
+  }
+  .menu-link:hover {
+    text-shadow: 1px 1px 1px #f0e594;
+    color: #ab844f;
+  }
+  .bottom-heaader {
+    height: 0;
+  }
+  .toggle-button {
+    display: block;
+  }
+  .main-menu-list {
+    opacity: 0;
+    visibility: hidden;
+    position: fixed;
+    right: 0;
+    top: 0;
+    height: 100vh;
+    justify-content: flex-start;
+    flex-direction: column;
+    padding: 2rem;
+    width: 50vw;
+    z-index: 9;
+    background: #4d0524;
+  }
+  .display-menu {
+    opacity: 1;
+    visibility: visible;
+    transition: all 0.5s;
+  }
   .two-column .inner-wrapper {
     grid-template-columns: 1fr;
   }
 }
 @media screen and (max-width: 480px) {
+  html {
+    font-size: 8px;
+  }
+  .toggle-button {
+    width: 5rem;
+    height: 4rem;
+  }
+  .banner-caption {
+    padding: 0.5rem 2rem;
+  }
   .main-menu-list {
     flex-wrap: wrap;
-    justify-content: space-between;
   }
   .row-wrapper .inner-wrapper {
     grid-template-columns: 1fr;
@@ -457,14 +520,12 @@ hr {
   .contact-links a {
     padding: 0.2rem;
   }
-  .banner-caption {
-    font-size: 1.5rem;
-    left: 0;
-    right: 0;
-    padding: 0.5rem 2rem;
-    line-height: 3rem;
-  }
   .gallery-wrapper {
     grid-template-columns: 1fr;
+  }
+}
+@media screen and (max-width: 380px) {
+  .toggle-button {
+    top: 11rem;
   }
 }

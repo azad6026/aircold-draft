@@ -11,7 +11,10 @@ const ListLink = props => (
     </Link>
   </li>
 )
-
+const menuToggle = () => {
+  const menuList = document.querySelector(".main-menu-list")
+  menuList.classList.toggle("display-menu")
+}
 const Header = props => (
   <header>
     <section className="top-header">
@@ -451,6 +454,50 @@ const Header = props => (
     </section>
     <section className="bottom-heaader">
       <nav className="main-menu">
+        <button class="toggle-button" onClick={menuToggle}>
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            version="1.1"
+            id="Слой_1"
+            x="0px"
+            y="0px"
+            width="30px"
+            height="30px"
+            viewBox="0 0 50 50"
+            enable-background="new 0 0 50 50"
+          >
+            <line
+              fill="none"
+              stroke="#5a0429"
+              stroke-width="5"
+              stroke-miterlimit="10"
+              x1="50"
+              y1="25"
+              x2="0"
+              y2="25"
+            />
+            <line
+              fill="none"
+              stroke="#5a0429"
+              stroke-width="5"
+              stroke-miterlimit="10"
+              x1="50"
+              y1="10"
+              x2="0"
+              y2="10"
+            />
+            <line
+              fill="none"
+              stroke="#5a0429"
+              stroke-width="5"
+              stroke-miterlimit="10"
+              x1="0"
+              y1="40"
+              x2="50"
+              y2="40"
+            />
+          </svg>
+        </button>
         <ul className="main-menu-list">
           <ListLink to="/">Home</ListLink>
           <ListLink to="/about">About</ListLink>
