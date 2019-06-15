@@ -1,12 +1,13 @@
 import React from "react"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
-import Gallery from "../components/gallery"
+import Heading1 from "../components/headings/heading1"
 
+import Gallery from "../components/gallery"
 const GalleryPage = () => (
   <Layout>
     <SEO title="Gallery" />
-    <h1>Welcome to our Gallery</h1>
+    <Heading1 class="centred">Our Gallery</Heading1>
     <Gallery />
   </Layout>
 )

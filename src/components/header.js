@@ -503,7 +503,7 @@ const Header = props => (
           <ListLink to="/about">About</ListLink>
           <ListLink to="/services">Services</ListLink>
           <ListLink to="/gallery">Gallery</ListLink>
-          <ListLink to="/contact">Contact</ListLink>
+          <ListLink to="/index.html#contactSection">Contact</ListLink>
         </ul>
       </nav>
     </section>

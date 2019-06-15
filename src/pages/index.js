@@ -11,23 +11,28 @@ import Heading3 from "../components/headings/heading3"
 
 const IndexPage = props => (
   <Layout>
-    <SEO title="Home" keywords={[`business`, `web site`, `services`]} />
+    <SEO
+      title="Home"
+      slug="home"
+      keywords={[`business`, `web site`, `services`]}
+    />
     <section className="top-banner">
       <Image filename="house-with-air-con.png" alt="some image" />
       <Paragraph className="banner-caption">
-        Installation, Maintenance and Customer Support is What We Offer
+        AIRCOLD
+        <br />
+        <span>Installation, Maintenance , Renewal</span>
       </Paragraph>
     </section>
     <article className="row-wrapper two-column about-section">
       <div className="inner-wrapper">
         <section>
-          <Heading1>Website about section</Heading1>
+          <Heading1>About AIRCOLD</Heading1>
           <Paragraph>
-            Lorem Ipsum is simply dummy text of the printing and typesetting
-            industry. Lorem Ipsum has been the industry's standard dummy text
-            ever since the 1500s, when an unknown printer took a galley of type
-            and scrambled it to make a type PageMaker including versions of
-            Lorem Ipsum.
+            B N is a very passionate businessman that has been in his
+            professional career for ove 20 years. He started the business on
+            2009 and has been strongly improve his position in the industry
+            since then.
           </Paragraph>
         </section>
         <section>
@@ -43,10 +48,10 @@ const IndexPage = props => (
       <div className="inner-wrapper">
         <aside className="service-box">
           <Image filename="different-solit-types.jpg" alt="some image" />
-          <Heading3 class="main-title">First Service</Heading3>
+          <Heading3 class="main-title">Installation</Heading3>
           <Paragraph>
-            Lorem Ipsum is simply dummy text of the printing and typesetting
-            industry. Lorem Ipsum has been the industry's standard dummy tex
+            Old or new, heating or cooling systems, both domestic and commercial
+            environments
           </Paragraph>
           <Link className="button-link" to="/services">
             Read More
@@ -54,10 +59,10 @@ const IndexPage = props => (
         </aside>
         <aside className="service-box">
           <Image filename="old-conditioning-systems.jpg" alt="some image" />
-          <Heading3 class="main-title">Second Service</Heading3>
+          <Heading3 class="main-title">Maintenance</Heading3>
           <Paragraph>
-            Lorem Ipsum is simply dummy text of the printing and typesetting
-            industry. Lorem Ipsum has been the industry's standard dummy tex
+            Practical maintenance / repairs for all heating and cooling systems
+            giving best
           </Paragraph>
           <Link className="button-link" to="/services">
             Read More
@@ -65,10 +70,10 @@ const IndexPage = props => (
         </aside>
         <aside className="service-box">
           <Image filename="modern-splits-look.jpg" alt="some image" />
-          <Heading3 class="main-title">Third Service</Heading3>
+          <Heading3 class="main-title">Renewal</Heading3>
           <Paragraph>
-            Lorem Ipsum is simply dummy text of the printing and typesetting
-            industry. Lorem Ipsum has been the industry's standard dummy tex
+            No matter how old is your conditioning system, we will provide best
+            solutions to .
           </Paragraph>
           <Link className="button-link" to="/services">
             Read More
@@ -100,7 +105,10 @@ const IndexPage = props => (
         </Link>
       </div>
     </section>
-    <section className="row-wrapper two-column contact-section">
+    <section
+      id="contactSection"
+      className="row-wrapper two-column contact-section"
+    >
       <Heading2 class="main-title">Contact Us</Heading2>
       <div className="inner-wrapper">
         <aside className="form-section">
@@ -112,22 +120,18 @@ const IndexPage = props => (
           <hr />
           <Paragraph>
             Phone:&nbsp;&nbsp;
-            <Link
-              to="tel:1300 123 456"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              1300 123 456
+            <Link to="tel:0423503022" target="_blank" rel="noopener noreferrer">
+              042 350 3022
             </Link>
           </Paragraph>
           <Paragraph>
             Email:&nbsp;&nbsp;
             <Link
-              to="mailto:info@site.com"
+              to="barry@aircold.com"
               target="_blank"
               rel="noopener noreferrer"
             >
-              info@site.com
+              barry@aircold.com
             </Link>
           </Paragraph>
           <Image filename="say-hello.jpg" alt="some image" />

@@ -9,6 +9,7 @@ body {
   font-size: 2rem;
   line-height: 2.5rem;
 }
+.centred{ text-align: center;margin: 2rem auto; }
 .page-wrapper {
   overflow-x: hidden;
 }
@@ -157,6 +158,7 @@ hr {
   color: #5a0429;
   text-shadow: 2px 2px 5px #a98343;
   overflow: hidden;
+  white-space: nowrap;
 }
 .banner-caption:before {
   content: "";
@@ -169,6 +171,29 @@ hr {
   background-attachment: fixed;
   -webkit-filter: blur(4px);
   filter: blur(4px);
+}
+/*  banner typewriter effect */
+.anim-typewriter {
+  animation: typewriter 7s steps(20) 1s 1 normal both,
+    blinkTextCursor 500ms steps(40) infinite normal;
+}
+
+@keyframes typewriter {
+  from {
+    width: 0;
+  }
+  to {
+    width: 30em;
+  }
+}
+
+@keyframes blinkTextCursor {
+  from {
+    border-right-color: rgba(255, 255, 255, 0.75);
+  }
+  to {
+    border-right-color: transparent;
+  }
 }
 .row-wrapper {
   padding: 5rem;
@@ -399,6 +424,7 @@ hr {
   display: grid;
   grid-template-columns: 1;
   grid-template-rows: 1;
+  position: relative;
 }
 .item img {
   grid-column: 1 / -1;
@@ -411,11 +437,15 @@ hr {
   background: #ffc60032;
   grid-column: 1 / -1;
   grid-row: 1 / -1;
-  position: relative;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
   display: grid;
   justify-items: center;
   align-items: center;
-  /* transition: 0.2s; */
+  cursor: pointer;
   transform: translateY(100%);
 }
 
@@ -451,6 +481,7 @@ hr {
 .gallery {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+  grid-gap: 1rem;
   grid-auto-flow: dense;
 }
 /*  */
