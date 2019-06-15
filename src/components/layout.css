@@ -9,7 +9,10 @@ body {
   font-size: 2rem;
   line-height: 2.5rem;
 }
-.centred{ text-align: center;margin: 2rem auto; }
+.centred {
+  text-align: center;
+  margin: 2rem auto;
+}
 .page-wrapper {
   overflow-x: hidden;
 }
@@ -49,6 +52,9 @@ a:hover {
 }
 hr {
   background: #a98343;
+}
+.content {
+  min-height: 100vh;
 }
 /* header styles */
 .top-header {
@@ -134,7 +140,8 @@ hr {
 .gallery-header {
   text-align: center;
 }
-.top-banner {
+.top-banner,
+.full-width {
   position: relative;
   width: 100vw;
   left: 50%;

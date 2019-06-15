@@ -43,7 +43,7 @@ const IndexPage = props => (
         </section>
       </div>
     </article>
-    <section className="row-wrapper services-section">
+    <section className="row-wrapper full-width  services-section">
       <Heading2 class="services-header">Our Services section</Heading2>
       <div className="inner-wrapper">
         <aside className="service-box">
@@ -107,7 +107,7 @@ const IndexPage = props => (
     </section>
     <section
       id="contactSection"
-      className="row-wrapper two-column contact-section"
+      className="row-wrapper full-width  two-column contact-section"
     >
       <Heading2 class="main-title">Contact Us</Heading2>
       <div className="inner-wrapper">
@@ -120,19 +120,19 @@ const IndexPage = props => (
           <hr />
           <Paragraph>
             Phone:&nbsp;&nbsp;
-            <Link to="tel:0423503022" target="_blank" rel="noopener noreferrer">
+            <a href="tel:0423503022" target="_blank" rel="noopener noreferrer">
               042 350 3022
-            </Link>
+            </a>
           </Paragraph>
           <Paragraph>
             Email:&nbsp;&nbsp;
-            <Link
-              to="barry@aircold.com"
+            <a
+              href="mailto:barry@aircold.com"
               target="_blank"
               rel="noopener noreferrer"
             >
               barry@aircold.com
-            </Link>
+            </a>
           </Paragraph>
           <Image filename="say-hello.jpg" alt="some image" />
         </aside>

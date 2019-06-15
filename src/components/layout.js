@@ -28,12 +28,16 @@ const Layout = ({ children }) => (
     render={data => (
       <>
         <div className="page-wrapper">
-          <Header />
-          <main className="main-content">{children}</main>
+          <div className="content">
+            <Header />
+            <main className="main-content">{children}</main>
+          </div>
           <footer className="main-footer">
             © {new Date().getFullYear()}, Designed by
             {` `}
-            <a href="htto://nkpro.com.au">Nikpro</a>
+            <a target="_blank" rel="noopener noreferrer" href="http://nikpro.com.au">
+              Nikpro
+            </a>
           </footer>
         </div>
       </>
