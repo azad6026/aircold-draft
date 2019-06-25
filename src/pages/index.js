@@ -127,11 +127,11 @@ const IndexPage = props => (
           <Paragraph>
             Email:&nbsp;&nbsp;
             <a
-              href="mailto:barry@aircold.com"
+              href="mailto:barry@aircold.com.au"
               target="_blank"
               rel="noopener noreferrer"
             >
-              barry@aircold.com
+              barry@aircold.com.au
             </a>
           </Paragraph>
           <Image filename="say-hello.jpg" alt="some image" />

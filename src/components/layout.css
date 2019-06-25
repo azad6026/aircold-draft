@@ -506,6 +506,7 @@ hr {
     right: 0;
     line-height: 3rem;
   }
+  .menu-link[aria-current="page"],
   .menu-link:hover {
     text-shadow: 1px 1px 1px #f0e594;
     color: #ab844f;
