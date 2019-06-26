@@ -15,9 +15,9 @@ const AboutPage = () => (
     <br />
     <Heading1>About AIRCOLD</Heading1>
     <Paragraph>
-      B N is a very passionate businessman that has been in his professional
-      career for ove 20 years. He started the business on 2009 and has been
-      strongly improve his position in the industry since then.
+      Barry(Bahram) Nasirian is a very passionate businessman that has been in
+      his professional career for ove 20 years. He started the business on 2009
+      and has been strongly improving his position in the industry since then.
     </Paragraph>
     <Paragraph>
       Having the right expertise of heating and cooling systems, he has been

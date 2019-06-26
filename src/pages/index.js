@@ -29,10 +29,10 @@ const IndexPage = props => (
         <section>
           <Heading1>About AIRCOLD</Heading1>
           <Paragraph>
-            B N is a very passionate businessman that has been in his
+            Barry is a very passionate businessman that has been in his
             professional career for ove 20 years. He started the business on
-            2009 and has been strongly improve his position in the industry
-            since then.
+            2009 and has been strongly improving his position in the industry
+            since.
           </Paragraph>
         </section>
         <section>
@@ -62,7 +62,7 @@ const IndexPage = props => (
           <Heading3 class="main-title">Maintenance</Heading3>
           <Paragraph>
             Practical maintenance / repairs for all heating and cooling systems
-            giving best
+            giving best ...
           </Paragraph>
           <Link className="button-link" to="/services">
             Read More
@@ -73,7 +73,7 @@ const IndexPage = props => (
           <Heading3 class="main-title">Renewal</Heading3>
           <Paragraph>
             No matter how old is your conditioning system, we will provide best
-            solutions to .
+            solutions ...
           </Paragraph>
           <Link className="button-link" to="/services">
             Read More
