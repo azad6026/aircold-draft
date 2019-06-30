@@ -34,6 +34,9 @@ const IndexPage = props => (
             2009 and has been strongly improving his position in the industry
             since.
           </Paragraph>
+          <Link className="custom-link" to="/about">
+            Read More
+          </Link>
         </section>
         <section>
           <Image
