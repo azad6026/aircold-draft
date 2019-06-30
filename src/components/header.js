@@ -13,7 +13,7 @@ const ListLink = props => (
 )
 const menuToggle = () => {
   const menuList = document.querySelector(".main-menu-list")
-  menuList.classList.toggle("display-menu")
+  menuList.classList.toggle("display-menu");
 }
 const Header = props => (
   <header>
