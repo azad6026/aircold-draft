@@ -103,7 +103,7 @@ const IndexPage = props => (
             alt="some image"
           />
         </div>
-        <Link className="button-link btn" to="#">
+        <Link className="button-link btn" to="/gallery">
           Go to gallery
         </Link>
       </div>
